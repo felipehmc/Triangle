@@ -5,8 +5,10 @@ public class Triangle extends Shape {
     private float height;
     Triangle(String aName){
         super(aName);
-        base=4;
-        height=11;
+    }
+    public void putDimensions(float b,float h){
+        base = b;
+        height = h;
     }
     public float calculateArea(){
         float area;
@@ -14,3 +16,4 @@ public class Triangle extends Shape {
         return area;
     }
 }
+
